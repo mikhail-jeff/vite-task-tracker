@@ -14,7 +14,7 @@ const TodoForm = () => {
 		if (todo.trim() === "") {
 			toast.error("Please, enter a task.", {
 				position: "top-right",
-				autoClose: 3000,
+				autoClose: 1000,
 				hideProgressBar: false,
 				closeOnClick: true,
 				pauseOnHover: true,
@@ -28,7 +28,7 @@ const TodoForm = () => {
 
 			toast.success("Task added succesfuly.", {
 				position: "top-right",
-				autoClose: 3000,
+				autoClose: 1000,
 				hideProgressBar: false,
 				closeOnClick: true,
 				pauseOnHover: true,

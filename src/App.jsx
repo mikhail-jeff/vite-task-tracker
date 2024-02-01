@@ -17,7 +17,7 @@ function App() {
 
 		toast.success("Task updated succesfuly.", {
 			position: "top-right",
-			autoClose: 3000,
+			autoClose: 1000,
 			hideProgressBar: false,
 			closeOnClick: true,
 			pauseOnHover: true,
@@ -33,7 +33,7 @@ function App() {
 
 		toast.success("Task deleted succesfuly.", {
 			position: "top-right",
-			autoClose: 3000,
+			autoClose: 1000,
 			hideProgressBar: false,
 			closeOnClick: true,
 			pauseOnHover: true,
@@ -52,7 +52,7 @@ function App() {
 		if (updatedTodo.completed) {
 			toast.success("Task marked incomplete.", {
 				position: "top-right",
-				autoClose: 3000,
+				autoClose: 1000,
 				hideProgressBar: false,
 				closeOnClick: true,
 				pauseOnHover: true,
@@ -64,7 +64,7 @@ function App() {
 		} else {
 			toast.success("Task marked completed.", {
 				position: "top-right",
-				autoClose: 3000,
+				autoClose: 1000,
 				hideProgressBar: false,
 				closeOnClick: true,
 				pauseOnHover: true,
@@ -81,7 +81,7 @@ function App() {
 
 		toast.success("All tasks deleted.", {
 			position: "top-right",
-			autoClose: 3000,
+			autoClose: 1000,
 			hideProgressBar: false,
 			closeOnClick: true,
 			pauseOnHover: true,
