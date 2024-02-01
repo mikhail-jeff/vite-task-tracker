@@ -47,14 +47,14 @@ const TodoForm = () => {
 			onSubmit={add}
 			className="flex justify-center mx-3 mb-5">
 			<input
-				className="w-full sm:w-[600px] md:w-[800px] lg:w-[1130px]  rounded-l-lg px-3 outline-none bg-white py-3 xs:rounded-tl-lg xs:rounded-bl-lg"
+				className="w-full sm:w-[600px] md:w-[800px] lg:w-[1130px] px-3 outline-none bg-white py-3 rounded-tl-lg rounded-bl-lg"
 				type="text"
 				placeholder="Enter a task..."
 				value={todo}
 				onChange={(e) => setTodo(e.target.value)}
 			/>
 			<button
-				className="rounded-r-lg px-3 py-2 bg-[#005CC8] hover:bg-[#0f66ca]   shrink-0 uppercase font-semibold text-white"
+				className="rounded-br-lg rounded-tr-lg px-3 py-2 bg-[#005CC8] hover:bg-[#0f66ca] shrink-0 uppercase font-semibold text-white"
 				type="submit">
 				ADD
 			</button>
