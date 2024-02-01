@@ -5,11 +5,14 @@ import { TodoForm, TodoItem } from "./components";
 import { ToastContainer, toast, Slide } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+import { v4 as uuidv4 } from "uuid";
+uuidv4();
+
 function App() {
 	const [todos, setTodos] = useState([]);
 
 	const addTodo = (todo) => {
-		setTodos((prev) => [{ id: Date.now(), ...todo }, ...prev]);
+		setTodos((prev) => [{ id: uuidv4(), ...todo }, ...prev]);
 	};
 
 	const updateTodo = (id, todo) => {
