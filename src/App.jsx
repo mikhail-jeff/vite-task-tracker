@@ -15,7 +15,7 @@ function App() {
 	const updateTodo = (id, todo) => {
 		setTodos((prev) => prev.map((prevTodo) => (prevTodo.id === id ? todo : prevTodo)));
 
-		toast.success("Task updated succesfuly.", {
+		toast.success("Task updated succesfuly", {
 			position: "top-right",
 			autoClose: 1000,
 			hideProgressBar: false,
@@ -31,7 +31,7 @@ function App() {
 	const deleteTodo = (id) => {
 		setTodos((prev) => prev.filter((todo) => todo.id !== id));
 
-		toast.success("Task deleted succesfuly.", {
+		toast.success("Task deleted succesfuly", {
 			position: "top-right",
 			autoClose: 1000,
 			hideProgressBar: false,
@@ -50,7 +50,7 @@ function App() {
 		const updatedTodo = todos.find((todo) => todo.id === id);
 
 		if (updatedTodo.completed) {
-			toast.success("Task marked incomplete.", {
+			toast.success("Task marked incomplete", {
 				position: "top-right",
 				autoClose: 1000,
 				hideProgressBar: false,
@@ -62,7 +62,7 @@ function App() {
 				transition: Slide,
 			});
 		} else {
-			toast.success("Task marked completed.", {
+			toast.success("Task marked completed", {
 				position: "top-right",
 				autoClose: 1000,
 				hideProgressBar: false,
@@ -79,7 +79,7 @@ function App() {
 	const clear = () => {
 		setTodos([]);
 
-		toast.success("All tasks deleted.", {
+		toast.success("All tasks deleted", {
 			position: "top-right",
 			autoClose: 1000,
 			hideProgressBar: false,

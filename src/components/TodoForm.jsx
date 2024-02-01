@@ -12,7 +12,7 @@ const TodoForm = () => {
 		e.preventDefault();
 
 		if (todo.trim() === "") {
-			toast.error("Please, enter a task.", {
+			toast.error("Please, enter a task", {
 				position: "top-right",
 				autoClose: 1000,
 				hideProgressBar: false,
@@ -26,7 +26,7 @@ const TodoForm = () => {
 		} else {
 			addTodo({ todo, completed: false });
 
-			toast.success("Task added succesfuly.", {
+			toast.success("Task added succesfuly", {
 				position: "top-right",
 				autoClose: 1000,
 				hideProgressBar: false,
