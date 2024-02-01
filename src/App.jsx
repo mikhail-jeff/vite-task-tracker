@@ -79,7 +79,7 @@ function App() {
 		}
 	};
 
-	const clear = () => {
+	const clearAllTasks = () => {
 		setTodos([]);
 
 		toast.success("All tasks deleted", {
@@ -128,7 +128,7 @@ function App() {
 				{todos && todos.length > 0 ? (
 					<div className="mx-2">
 						<button
-							onClick={clear}
+							onClick={clearAllTasks}
 							className="bg-[#005CC8] duration-300 hover:bg-[#0f66ca] rounded-md p-2 font-semibold text-white flex justify-center items-center sm:w-[600px] w-full md:w-[800px] lg:w-[1000px] xl:w-[1200px] mx-auto">
 							{todos && todos.length > 1 ? "Clear Tasks" : "Clear Task"} ({todos.length})
 						</button>
