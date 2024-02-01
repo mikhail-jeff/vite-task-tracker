@@ -108,14 +108,14 @@ function App() {
 
 	return (
 		<TodoProvider value={{ todos, addTodo, updateTodo, deleteTodo, toggleComplete }}>
-			<div className="bg-[#232323] min-h-screen py-4">
-				<h1 className="text-4xl text-center mb-10 mt-1 text-white font-medium">Task Tracker</h1>
+			<div className="app-container">
+				<h1 className="app-container_title">Task Tracker</h1>
 
 				<div className="mb-12">
 					<TodoForm />
 				</div>
 
-				<div className="flex flex-wrap gap-y-3 mb-5 mx-3">
+				<div className="todo-item_container_parent">
 					{todos.map((todo) => (
 						<div
 							className="w-full"
@@ -129,7 +129,7 @@ function App() {
 					<div className="mx-2">
 						<button
 							onClick={clearAllTasks}
-							className="bg-[#005CC8] duration-300 hover:bg-[#0f66ca] rounded-md p-2 font-semibold text-white flex justify-center items-center sm:w-[600px] w-full md:w-[800px] lg:w-[1000px] xl:w-[1200px] mx-auto">
+							className="app-container_btn">
 							{todos && todos.length > 1 ? "Clear Tasks" : "Clear Task"} ({todos.length})
 						</button>
 					</div>

@@ -45,16 +45,16 @@ const TodoForm = () => {
 	return (
 		<form
 			onSubmit={add}
-			className="flex justify-center mx-3 mb-5">
+			className="todo-form_form">
 			<input
-				className="w-full sm:w-[600px] md:w-[800px] lg:w-[1130px] px-3 outline-none bg-white py-3 rounded-tl-lg rounded-bl-lg"
+				className="todo-form_input"
 				type="text"
 				placeholder="Enter a task..."
 				value={todo}
 				onChange={(e) => setTodo(e.target.value)}
 			/>
 			<button
-				className="rounded-br-lg rounded-tr-lg px-3 py-2 bg-[#005CC8] hover:bg-[#0f66ca] shrink-0 uppercase font-semibold text-white"
+				className="todo-form_btn"
 				type="submit">
 				ADD
 			</button>
