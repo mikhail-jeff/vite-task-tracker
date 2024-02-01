@@ -47,7 +47,7 @@ const TodoForm = () => {
 			onSubmit={add}
 			className="flex justify-center mx-3 mb-5">
 			<input
-				className="w-full sm:w-[600px] md:w-[800px] lg:w-[1130px]  rounded-l-lg px-3 outline-none bg-white py-3 sm:rounded-tl-lg sm:rounded-bl-lg"
+				className="w-full sm:w-[600px] md:w-[800px] lg:w-[1130px]  rounded-l-lg px-3 outline-none bg-white py-3 xs:rounded-tl-lg xs:rounded-bl-lg"
 				type="text"
 				placeholder="Enter a task..."
 				value={todo}
